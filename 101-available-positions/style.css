@@ -1,0 +1,154 @@
+/* Start */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Variables */
+:root {
+	/* colors */
+	--clr-primary-100: #ffffff;
+	--clr-primary-200: #f6f4fc;
+	--clr-primary-400: #3456dd;
+	--clr-primary-800: #1b173c;
+
+	/* box shadow */
+	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+	--ff-sans-serif: 'Poppins', sans-serif;
+}
+
+/* Global Styles */
+html {
+	background-color: var(--clr-primary-200);
+}
+
+body {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	color: var(--clr-primary-800);
+	font-family: var(--ff-sans-serif);
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.container {
+	width: min(95vw, 950px);
+	border-radius: 1rem;
+	background-color: var(--clr-primary-100);
+  margin-block: 1rem;
+}
+
+h2,
+h3 {
+	margin: 0;
+	margin-bottom: 1.38rem;
+	font-weight: 600;
+	line-height: 1.3;
+	text-wrap: balance;
+	text-transform: capitalize;
+}
+
+h2 {
+	font-size: 2.441rem;
+}
+
+h3 {
+	font-size: 1.953rem;
+}
+
+small,
+.text-small {
+	font-size: var(--smallText);
+}
+
+a {
+	text-decoration: none;
+}
+
+.text-container {
+	padding: 2rem;
+	max-width: 55ch;
+	margin-inline: auto;
+}
+
+.text-container p:first-of-type {
+	margin-bottom: 0.75rem;
+}
+
+.positions-container {
+	padding: 2rem;
+}
+
+.positions {
+	list-style: none;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+	gap: 0.75rem;
+}
+
+.position-item {
+	border: 1px solid #e9e8e8;
+	border-radius: 0.25rem;
+	padding: 1rem 2rem;
+	margin: auto;
+	background-color: var(--clr-primary-100);
+}
+
+.img {
+	max-width: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+.position-item img {
+	width: 120px;
+	margin-bottom: 0.75em;
+}
+
+.position-item p {
+	white-space: nowrap;
+	font-size: 1.1rem;
+}
+
+/* Buttons */
+.btn {
+	cursor: pointer;
+	color: var(--clr-primary-100);
+	background: var(--clr-primary-400);
+	border: transparent;
+	border-radius: 50vw;
+	padding: 0.75rem 1.75rem;
+	box-shadow: var(--shadow-1);
+	transition: all ease-in 0.3s;
+	display: inline-block;
+	margin-top: 2rem;
+	font-size: 0.9rem;
+	margin-inline: center;
+}
+
+@media (min-width: 35em) {
+  .btn {
+    width: 350px;
+  }
+}
+
+.btn:hover {
+	background: var(--clr-primary-800);
+	box-shadow: var(--shadow-3);
+}
