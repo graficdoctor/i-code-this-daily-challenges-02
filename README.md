@@ -25,7 +25,7 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ### Challenge 102
 
-![](screenshots/102-blog-page)
+![](screenshots/102-blog-page.jpg)
 
 - [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges-02/tree/main/102-blog-page)
 - [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges-02/102-blog-page)
@@ -34,7 +34,7 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ### Challenge 101
 
-![](screenshots/101-available-positions)
+![](screenshots/101-available-positions.jpg)
 
 - [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges-02/tree/main/101-available-positions)
 - [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges-02/101-available-positions)
