@@ -23,6 +23,15 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 102
+
+![](screenshots/102-blog-page)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges-02/tree/main/102-blog-page)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges-02/102-blog-page)
+
+---
+
 ### Challenge 101
 
 ![](screenshots/101-available-positions)
