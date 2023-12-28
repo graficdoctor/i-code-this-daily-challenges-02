@@ -23,6 +23,15 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 103
+
+![](screenshots/103-grid-footer.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges-02/tree/main/103-grid-footer)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges-02/103-grid-footer)
+
+---
+
 ### Challenge 102
 
 ![](screenshots/102-blog-page.jpg)
