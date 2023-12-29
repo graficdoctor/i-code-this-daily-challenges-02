@@ -23,7 +23,16 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
-### Challenge 103
+### Challenge 105
+
+![](screenshots/105-product-comps.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges-02/tree/main/105-product-comps)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges-02/105-product-comps)
+
+---
+
+### Challenge 104
 
 ![](screenshots/104-blog-ui.jpg)
 
