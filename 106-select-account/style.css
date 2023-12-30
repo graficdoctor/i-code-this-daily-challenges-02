@@ -1,0 +1,241 @@
+/* Start */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Variables */
+:root {
+	--clr-neutral-100: #fff;
+	--clr-neutral-200: #f0f3fb;
+	--clr-neutral-400: #bdcae8;
+	--clr-neutral-900: #3b3b3c;
+
+	/* box shadow */
+	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Global Styles */
+html {
+	background-color: var(--clr-neutral-200);
+}
+
+body {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	font-family: 'Mulish', sans-serif;
+	font-size: 0.9rem;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.container {
+	background-color: var(--clr-neutral-100);
+	width: min(95vw, 850px);
+	margin: 1rem auto;
+	border-radius: 1rem;
+	box-shadow: var(--shadow-2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h2,
+h5 {
+	margin: 0;
+	margin-bottom: 1rem;
+	font-weight: 700;
+	line-height: 1.3;
+	text-wrap: balance;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h5 {
+	font-size: 1.25rem;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.img {
+	max-width: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+.icon-tabler {
+	width: 1.5rem;
+}
+
+.profile-text {
+	margin-bottom: 2rem;
+	margin-inline: auto;
+	padding: 2rem;
+	max-width: 30em;
+}
+
+.profile-cards {
+	margin-inline: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 170px);
+	gap: 4rem;
+	padding-bottom: 4rem;
+	position: relative;
+	z-index: 1;
+}
+
+@media (max-width: 48em) {
+	.profile-cards {
+		grid-template-columns: repeat(auto-fit, 170px);
+	}
+}
+
+.profile-card {
+	width: 170px;
+	height: 190px;
+	position: relative;
+}
+
+.profile-card:not(:last-of-type):after {
+	content: '';
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	background-color: var(--clr-neutral-200);
+	border-radius: 1rem;
+	box-shadow: var(--shadow-3); /* Set box-shadow here */
+	z-index: -1;
+	inset: -10% 0 0 -10%;
+}
+
+.profile-card-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 1rem;
+	background-color: var(--clr-neutral-100); /* Set background color here */
+	font-weight: 600;
+	box-shadow: var(--shadow-3);
+	position: relative;
+	z-index: 1;
+}
+
+.profile-card-add {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+.profile-img {
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	margin-inline: auto;
+	margin-bottom: 0.75rem;
+}
+
+.profile-name {
+	margin-bottom: 0.75rem;
+}
+
+.profile-ellipsis {
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.25rem;
+	height: 1.5rem;
+	border-radius: 0.25rem;
+	transition: all 0.3s ease-in;
+}
+
+.profile-ellipsis:focus,
+.profile-ellipsis:hover {
+	background-color: var(--clr-neutral-200);
+}
+
+.profile-card-edit {
+	background-color: var(--clr-neutral-100);
+	box-shadow: var(--shadow-2);
+	text-align: left;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	/* display: flex; */
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	z-index: 5;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -25%;
+}
+
+.profile-card-edit p {
+	border-radius: 0.25rem;
+	padding: 0.25rem 0.5rem;
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+	transition: all 0.3s ease-in;
+}
+
+.profile-card-edit p:hover {
+	cursor: pointer;
+	background-color: var(--clr-neutral-200);
+}
+
+.profile-card-edit span {
+	display: inline-flex;
+	align-items: center;
+}
+
+.profile-card-edit svg {
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+/* Buttons */
+.btn {
+	cursor: pointer;
+	background: transparent;
+	border: transparent;
+	transition: all 0.3s ease-in;
+	text-transform: capitalize;
+	display: inline-block;
+}
+
+.profile-add-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.profile-add-btn svg {
+	width: 6rem;
+	height: 6rem;
+	stroke: var(--clr-neutral-200);
+	stroke-width: 1;
+}
