@@ -25,6 +25,19 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ### Challenge 106
 
+![](screenshots/107-social-invite.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges-02/tree/main/107-social-invite)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges-02/107-social-invite)
+
+**Useful Resources**
+
+- [How To - Custom Checkbox](https://www.w3schools.com/howto/howto_css_custom_checkbox.asp)
+
+---
+
+### Challenge 106
+
 ![](screenshots/106-select-account.jpg)
 
 - [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges-02/tree/main/106-select-account)
@@ -74,10 +87,6 @@ Unless noted otherwise, the building of the exercises is done with:
 
 - [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges-02/tree/main/101-available-positions)
 - [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges-02/101-available-positions)
-
-**Useful Resources**
-
-- []()
 
 ---
 
