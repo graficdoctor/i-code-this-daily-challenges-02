@@ -23,7 +23,16 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
-### Challenge 106
+### Challenge 108
+
+![](screenshots/108-testimonials)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges-02/tree/main/108-testimonials)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges-02/108-testimonials)
+
+---
+
+### Challenge 107
 
 ![](screenshots/107-social-invite.jpg)
 
