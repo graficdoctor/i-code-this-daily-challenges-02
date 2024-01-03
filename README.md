@@ -25,6 +25,15 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ### Challenge 108
 
+![](screenshots/109-20s-profile.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges-02/tree/main/109-20s-profile)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges-02/109-20s-profile)
+
+---
+
+### Challenge 108
+
 ![](screenshots/108-testimonials)
 
 - [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges-02/tree/main/108-testimonials)
