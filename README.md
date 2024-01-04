@@ -23,7 +23,16 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
-### Challenge 108
+### Challenge 110
+
+![](screenshots/110-analytics-graph.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges-02/tree/main/110-analytics-graph)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges-02/110-analytics-graph)
+
+---
+
+### Challenge 109
 
 ![](screenshots/109-20s-profile.jpg)
 
