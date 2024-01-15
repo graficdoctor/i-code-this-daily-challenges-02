@@ -23,6 +23,15 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 111
+
+![](screenshots/111-one-time-pricing.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges-02/tree/main/111-one-time-pricing)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges-02/111-one-time-pricing)
+
+---
+
 ### Challenge 110
 
 ![](screenshots/110-analytics-graph.jpg)
