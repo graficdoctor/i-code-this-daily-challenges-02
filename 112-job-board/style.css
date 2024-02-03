@@ -1,0 +1,242 @@
+/* Start */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Variables */
+:root {
+	/* box shadow */
+	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Global Styles */
+html {
+	background-color: #f4f7ff;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: center;
+	color: #292b4a;
+}
+
+.wrapper {
+	width: min(95vw, 850px);
+	margin-inline: auto;
+	padding-block: 1rem;
+}
+
+h1 {
+	margin: 0;
+	font-size: 2.5rem;
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+}
+
+h2 {
+	font-weight: 500;
+	font-size: clamp(1.25rem, 1.13vw + 1.27rem, 1.75rem);
+}
+
+small,
+.text-small {
+	font-size: var(--smallText);
+}
+
+a {
+	text-decoration: none;
+	color: #292b4a;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.img {
+	max-width: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+.job-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 2rem;
+	margin-block: 2rem;
+}
+
+.job-card {
+	background-color: #ffffff;
+	border-radius: 1rem;
+	padding: 2rem;
+	box-shadow: var(--shadow-2);
+	border: 1px solid #fff;
+	transition: all 0.3s linear;
+}
+
+.job-card:hover,
+.job-card:focus-visible {
+	transform: scale(1.05);
+	border-radius: 0.5rem;
+}
+
+.job-card h2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.job-card h2 span {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 3rem;
+	height: 3rem;
+	aspect-ratio: 1/1;
+	border-radius: 0.5rem;
+}
+
+.job-card:nth-child(1) h2 span {
+	background-image: linear-gradient(
+		135deg,
+		hsl(247deg 96% 91%) 0%,
+		hsl(249deg 96% 91%) 11%,
+		hsl(251deg 96% 91%) 22%,
+		hsl(254deg 96% 91%) 33%,
+		hsl(256deg 96% 91%) 44%,
+		hsl(258deg 96% 91%) 56%,
+		hsl(261deg 96% 91%) 67%,
+		hsl(263deg 96% 91%) 78%,
+		hsl(265deg 96% 91%) 89%,
+		hsl(268deg 95% 92%) 100%
+	);
+}
+
+.job-card:nth-child(2) h2 span {
+	background-image: linear-gradient(
+		135deg,
+		hsl(335deg 94% 87%) 0%,
+		hsl(337deg 95% 87%) 11%,
+		hsl(338deg 96% 88%) 22%,
+		hsl(340deg 96% 88%) 33%,
+		hsl(342deg 96% 89%) 44%,
+		hsl(343deg 96% 89%) 56%,
+		hsl(345deg 95% 90%) 67%,
+		hsl(346deg 95% 90%) 78%,
+		hsl(347deg 93% 90%) 89%,
+		hsl(349deg 91% 91%) 100%
+	);
+}
+
+.job-card:nth-child(3) h2 span {
+	background-image: linear-gradient(
+		135deg,
+		hsl(199deg 100% 88%) 0%,
+		hsl(201deg 100% 88%) 11%,
+		hsl(203deg 100% 89%) 22%,
+		hsl(207deg 100% 89%) 33%,
+		hsl(211deg 100% 90%) 44%,
+		hsl(217deg 100% 91%) 56%,
+		hsl(225deg 100% 92%) 67%,
+		hsl(236deg 100% 93%) 78%,
+		hsl(249deg 100% 93%) 89%,
+		hsl(262deg 100% 92%) 100%
+	);
+}
+
+.job-card:nth-child(4) h2 span {
+	background-image: linear-gradient(
+		135deg,
+		hsl(160deg 77% 86%) 0%,
+		hsl(168deg 75% 85%) 11%,
+		hsl(176deg 73% 85%) 22%,
+		hsl(183deg 75% 85%) 33%,
+		hsl(188deg 83% 85%) 44%,
+		hsl(193deg 90% 87%) 56%,
+		hsl(198deg 95% 88%) 67%,
+		hsl(203deg 97% 89%) 78%,
+		hsl(208deg 94% 89%) 89%,
+		hsl(214deg 88% 90%) 100%
+	);
+}
+
+.job-card:nth-child(5) h2 span {
+	background-image: linear-gradient(
+		135deg,
+		hsl(211deg 71% 85%) 0%,
+		hsl(218deg 68% 87%) 11%,
+		hsl(228deg 62% 88%) 22%,
+		hsl(245deg 53% 89%) 33%,
+		hsl(264deg 46% 89%) 44%,
+		hsl(284deg 39% 88%) 56%,
+		hsl(308deg 38% 87%) 67%,
+		hsl(325deg 48% 88%) 78%,
+		hsl(337deg 57% 89%) 89%,
+		hsl(347deg 62% 90%) 100%
+	);
+}
+
+.job-card:nth-child(6) h2 span {
+	background-image: linear-gradient(
+		320deg,
+		hsl(211deg 71% 85%) 0%,
+		hsl(218deg 68% 87%) 11%,
+		hsl(228deg 62% 88%) 22%,
+		hsl(245deg 53% 89%) 33%,
+		hsl(264deg 46% 89%) 44%,
+		hsl(284deg 39% 88%) 56%,
+		hsl(308deg 38% 87%) 67%,
+		hsl(325deg 48% 88%) 78%,
+		hsl(337deg 57% 89%) 89%,
+		hsl(347deg 62% 90%) 100%
+	);
+}
+
+svg {
+	stroke: #292b4a;
+	width: 1.75rem;
+	height: 1.75rem;
+	stroke-width: 2px;
+}
+
+p {
+	max-width: 80%;
+	margin-inline: auto;
+}
+
+/* Buttons */
+.btn {
+	cursor: pointer;
+	background: transparent;
+	border: 1px solid #d6d6e6;
+	border-radius: 0.5rem;
+	padding: 0.75rem 1.75rem;
+	transition: all 0.3s ease-in;
+	display: inline-block;
+	margin-top: 1.5rem;
+}
+
+.btn:hover {
+	border: 1px solid #1f2246;
+	background: #1f2246;
+	color: #fff;
+}
