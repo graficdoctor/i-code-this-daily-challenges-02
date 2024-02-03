@@ -23,6 +23,15 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 112
+
+![](screenshots/112-job-board.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges-02/tree/main/112-job-board)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges-02/112-job-board)
+
+---
+
 ### Challenge 111
 
 ![](screenshots/111-one-time-pricing.jpg)
