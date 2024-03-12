@@ -19,7 +19,8 @@ selectionButtons.forEach((button) => {
 
 continueBtnEl.addEventListener('click', function () {
 	const blogCardsSection = document.querySelector('.blog-cards');
+	const blogCardsParent = blogCardsSection.closest('div');
 	const selectionSection = document.querySelector('.selection-page');
-	blogCardsSection.style.display = 'flex';
+	blogCardsParent.style.display = 'block';
 	selectionSection.style.display = 'none';
 });

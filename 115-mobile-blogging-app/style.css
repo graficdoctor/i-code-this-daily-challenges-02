@@ -79,20 +79,6 @@ body {
 main {
 	margin-block: 2rem;
 	height: 757px;
-	background-image: linear-gradient(
-		135deg,
-		hsl(230deg 68% 37%) 0%,
-		hsl(230deg 68% 35%) 11%,
-		hsl(230deg 69% 34%) 22%,
-		hsl(231deg 69% 32%) 33%,
-		hsl(231deg 70% 31%) 44%,
-		hsl(231deg 71% 30%) 56%,
-		hsl(232deg 72% 28%) 67%,
-		hsl(232deg 73% 27%) 78%,
-		hsl(232deg 75% 25%) 89%,
-		hsl(232deg 77% 24%) 100%
-	);
-	border-radius: var(--border-radius);
 }
 
 .wrapper {
@@ -102,13 +88,12 @@ main {
 
 section {
 	padding: 1rem 2rem;
+	border-radius: var(--border-radius);
 }
 
 h1,
 h2,
-h3,
-h4,
-h5 {
+h3 {
 	margin: 0;
 	font-weight: 500;
 	line-height: 1.1;
@@ -144,6 +129,19 @@ ul {
 }
 
 .selection-page {
+	background-image: linear-gradient(
+		135deg,
+		hsl(230deg 68% 37%) 0%,
+		hsl(230deg 68% 35%) 11%,
+		hsl(230deg 69% 34%) 22%,
+		hsl(231deg 69% 32%) 33%,
+		hsl(231deg 70% 31%) 44%,
+		hsl(231deg 71% 30%) 56%,
+		hsl(232deg 72% 28%) 67%,
+		hsl(232deg 73% 27%) 78%,
+		hsl(232deg 75% 25%) 89%,
+		hsl(232deg 77% 24%) 100%
+	);
 	overflow: hidden;
 	color: var(--clr-neutral-100);
 	text-align: center;
@@ -164,7 +162,6 @@ ul {
 
 .selection-button {
 	cursor: pointer;
-
 }
 
 .selection-button div {
@@ -198,20 +195,23 @@ ul {
 	border: 1px solid var(--clr-accent-400);
 }
 
+div:has(.blog-cards) {
+	display: none;
+}
+
 .blog-cards {
 	background-color: var(--clr-neutral-100);
 	height: 700px;
 	border-bottom-left-radius: 0;
 	border-bottom-right-radius: 0;
 	overflow: scroll;
-	/* display: flex; */
+	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
-	display: none;
 }
 
 .blog-cards:has(:hover) .blog-card:not(:hover) {
-	opacity: 70%;
+	opacity: 80%;
 }
 
 .blog-card__img {
@@ -223,9 +223,6 @@ ul {
 	grid-template-columns: repeat(2, auto);
 	gap: 0.5rem;
 	margin-block: 13px;
-}
-
-.blog-card__title h3 {
 }
 
 .blog-card__title ion-icon {

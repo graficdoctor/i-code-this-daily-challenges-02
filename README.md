@@ -23,6 +23,15 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 115
+
+![](screenshots/115-mobile-blogging-app.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges-02/tree/main/115-mobile-blogging-app)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges-02/115-mobile-blogging-app)
+
+---
+
 ### Challenge 114
 
 ![](screenshots/114-statistics-website.jpg)
